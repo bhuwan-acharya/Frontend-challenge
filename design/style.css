@@ -1,0 +1,237 @@
+body {
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400px;
+  /* font-size: 12px; */
+  height: 100vh;
+  color: hsl(238, 29%, 16%);
+  display: flex;
+  font-size: 1.25em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  position: relative;
+  background-color: white;
+  height: 80%;
+  width: 70%;
+  border-radius: 2rem;
+  box-shadow: 0px 25px 30px hsl(240, 55%, 38%);
+  display: flex;
+  justify-content: space-between;
+}
+.images-article {
+  width: 60%;
+}
+.images {
+  position: relative;
+  background-image: url("/images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 110%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.online-woman {
+  position: relative;
+  overflow: hidden;
+}
+.woman-online-img {
+  position: relative;
+  margin-left: -15%;
+  width: 100%;
+  align-items: center;
+}
+.box {
+  position: relative;
+}
+.box-desktop-img {
+  position: absolute;
+  z-index: 1;
+  margin-left: -25%;
+  margin-top: 20%;
+  width: 40%;
+}
+
+.questions-article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.questions-div {
+  width: 80%;
+  /* margin-right: 10rem; */
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  color: hsl(238, 29%, 16%);
+  font-weight: 400;
+}
+/* .question {
+  display: flex;
+  justify-content: space-between;
+} */
+.heading {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.divider {
+  color: hsl(240, 5%, 91%);
+  width: 100%;
+}
+.answer {
+  color: hsl(237, 12%, 33%);
+  font-weight: 400;
+  display: none;
+}
+label {
+  cursor: pointer;
+}
+input {
+  display: none;
+}
+#question-one:checked ~ .answer {
+  display: block;
+}
+#question-one:checked ~ .arrow-one {
+  transform: rotate(180deg);
+}
+#question-one:checked + label {
+  font-weight: bold;
+}
+#question-two:checked ~ div {
+  display: block;
+}
+#question-two:checked ~ .arrow-two {
+  transform: rotate(180deg);
+}
+#question-two:checked + label {
+  font-weight: bold;
+}
+#question-three:checked ~ div {
+  display: block;
+}
+#question-three:checked ~ .arrow-three {
+  transform: rotate(180deg);
+}
+#question-three:checked + label {
+  font-weight: bold;
+}
+#question-four:checked ~ div {
+  display: block;
+}
+#question-four:checked ~ .arrow-four {
+  transform: rotate(180deg);
+}
+#question-four:checked + label {
+  font-weight: bold;
+}
+#question-five:checked ~ div {
+  display: block;
+}
+#question-five:checked ~ .arrow-five {
+  transform: rotate(180deg);
+}
+#question-five:checked + label {
+  font-weight: bold;
+}
+.question-answer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    position: relative;
+    height: 70%;
+    width: 90%;
+    border-radius: 2rem;
+    box-shadow: 0px 25px 30px hsl(240, 55%, 38%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .images-article {
+    width: 70%;
+    height: 40%;
+  }
+  .images {
+    position: relative;
+    background-image: url("/images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 120%;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .online-woman {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: -65%;
+    z-index: 1;
+  }
+  .woman-online-img {
+    position: relative;
+    width: 100%;
+    margin-left: 0%;
+  }
+  .box {
+    position: relative;
+  }
+  .box-desktop-img {
+    position: absolute;
+    z-index: 2;
+    width: 40%;
+    margin-left: -65%;
+    margin-top: -50%;
+  }
+  .questions-article {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+  }
+
+  .questions-div {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .questions {
+    display: flex;
+    flex-direction: column;
+    color: hsl(238, 29%, 16%);
+    font-weight: 400;
+  }
+  .heading {
+    display: flex;
+    font-size: 3rem;
+    font-weight: bold;
+    justify-content: center;
+  }
+  .divider {
+    color: hsl(240, 5%, 91%);
+    width: 100%;
+  }
+  .answer {
+    color: hsl(237, 12%, 33%);
+    font-weight: 400;
+    display: none;
+  }
+}
