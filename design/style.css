@@ -6,7 +6,7 @@ body {
   height: 100vh;
   color: hsl(238, 29%, 16%);
   display: flex;
-  font-size: 0.75rem
+  font-size: 0.75rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -61,12 +61,15 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-  overflow: scroll;
 }
 
 .questions-div {
   width: 80%;
-  height:90vh
+  height: 90%;
+  overflow-y: scroll;
+}
+.questions-div::-webkit-scrollbar {
+  display: none;
 }
 
 .questions {
@@ -76,8 +79,6 @@ body {
   font-weight: 25rem;
   height: 100%;
   padding: 1rem;
-  overflow: scroll;
-  
 }
 .heading {
   font-size: 3rem;
@@ -205,6 +206,9 @@ input {
     width: 100%;
     height: 100%;
     overflow: scroll;
+  }
+  .questions-article::-webkit-scrollbar {
+    display: none;
   }
 
   .questions-div {
