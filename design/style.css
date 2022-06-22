@@ -6,7 +6,7 @@ body {
   height: 100vh;
   color: hsl(238, 29%, 16%);
   display: flex;
-  font-size: 0.75rem;
+  font-size: 1.25rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
