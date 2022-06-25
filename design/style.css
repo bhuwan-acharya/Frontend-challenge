@@ -90,7 +90,27 @@ body {
   color: hsl(237, 12%, 33%);
   font-weight: 400;
   display: none;
+  animation-duration: 1s;
+  animation-name: fadeIn;
 }
+/* @keyframes slidein {
+  from {
+    margin-top: -2%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
+} */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 label {
   cursor: pointer;
 }
