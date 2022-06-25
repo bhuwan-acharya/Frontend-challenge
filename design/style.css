@@ -76,7 +76,6 @@ body {
   flex-direction: column;
   color: hsl(238, 29%, 16%);
   font-weight: 25rem;
-  /* height: 100%; */
   padding: 1rem;
 }
 .heading {
@@ -98,6 +97,18 @@ label {
 input {
   display: none;
 }
+/* .question-answer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+} */
+
+.question-arrow {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
 #question-one:checked ~ .answer {
   display: block;
 }
@@ -106,6 +117,9 @@ input {
 }
 #question-one:checked + label {
   font-weight: bold;
+}
+#question-one:checked + label > .arrow-one {
+  transform: rotate(180deg);
 }
 #question-two:checked ~ div {
   display: block;
@@ -142,11 +156,6 @@ input {
 }
 #question-five:checked + label {
   font-weight: bold;
-}
-.question-answer {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
 }
 
 @media screen and (max-width: 800px) {
